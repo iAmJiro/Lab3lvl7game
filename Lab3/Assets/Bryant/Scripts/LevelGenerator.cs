@@ -129,7 +129,7 @@ public class LevelGenerator : MonoBehaviour
         //check left neighbour
         if (room.gridX - 1 >= 0) 
         {
-            Room leftRoom = rooms[room.gridX = 1, room.gridY];
+            Room leftRoom = rooms[room.gridX - 1, room.gridY];
             if (!leftRoom.onPath)
             {
                 neighbours.Add(leftRoom);
@@ -138,7 +138,7 @@ public class LevelGenerator : MonoBehaviour
         //check right neighbour
         if (room.gridX + 1 < levelWidth) 
         {
-            Room rightRoom = rooms[room.gridX = 1, room.gridY];
+            Room rightRoom = rooms[room.gridX + 1, room.gridY];
             if (!rightRoom.onPath) 
             {
                 neighbours.Add(rightRoom);

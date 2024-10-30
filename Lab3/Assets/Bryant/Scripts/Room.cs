@@ -26,7 +26,7 @@ public class Room : MonoBehaviour
     }
     public void UpdateInfo() 
     {
-        roomLabel.text = ("[" + gridX + "," + gridY + "]");
+        //roomLabel.text = ("[" + gridX + "," + gridY + "]");
         if (onPath) 
         {
             roomLabel.color = Color.yellow;
@@ -73,7 +73,8 @@ public class Room : MonoBehaviour
                 possibleBases.Add(bases[i]);
             }
         }
-        int roomBaseIndex = Random.Range(0, possibleBases.Count - 1);
+        int roomBaseIndex = Random.Range(0, possibleBases.Count);
+
         roomBase = possibleBases[roomBaseIndex];
         return roomBase;
     }
