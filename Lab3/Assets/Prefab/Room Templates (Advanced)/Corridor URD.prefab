@@ -978,6 +978,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5398536229417284808, guid: 1a5ca43f766e3ce4f97f7874c4c05b6c,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5398536229417284808, guid: 1a5ca43f766e3ce4f97f7874c4c05b6c,
+        type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7444228385630350829, guid: 1a5ca43f766e3ce4f97f7874c4c05b6c,
         type: 3}
       propertyPath: m_Name
